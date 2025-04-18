@@ -1,29 +1,29 @@
-# Projeto de Busca E-commerce - Interface Submarino
+# Busca de Refrigerantes
 
 ## 💡 Sobre o Projeto
 
-Este projeto foi desenvolvido como parte de um teste técnico, implementando uma interface de busca de produtos inspirada no Submarino. O sistema oferece uma experiência de busca em tempo real, permitindo aos usuários encontrar produtos de forma rápida e eficiente.
+Este projeto implementa uma interface de busca de refrigerantes, permitindo aos usuários pesquisar e visualizar diferentes tipos de refrigerantes. O sistema oferece uma experiência de busca em tempo real com uma interface limpa e intuitiva.
 
 ## 🎯 Funcionalidades Principais
 
 - **Busca em Tempo Real**
   - Resultados aparecem conforme o usuário digita
-  - Integração com API de autocomplete
-  - Exibição dos 3 primeiros produtos mais relevantes
+  - Sugestões automáticas de produtos
+  - Exibição dos produtos mais relevantes
 
 - **Visualização de Produtos**
-  - Thumbnails dos produtos
-  - Preços e condições de pagamento
+  - Imagens reais dos refrigerantes
+  - Preços atuais e anteriores
   - Informações detalhadas do produto
-  - Redirecionamento para página do produto
+  - Opções de quantidade na compra
+  - Cálculo de frete por CEP
 
 ## 🛠️ Tecnologias Utilizadas
 
 - React + TypeScript
 - Vite
-- Styled Components
-- Axios
-- React Query
+- React Router DOM
+- CSS Modules
 
 ## ⚙️ Como Executar o Projeto
 
@@ -42,25 +42,43 @@ npm install
 npm run dev
 ```
 
-## 📋 Decisões Técnicas
+## 📋 Funcionalidades Implementadas
 
-### Arquitetura
-- Componentização para melhor manutenção e reuso
-- Hooks personalizados para lógica de negócios
-- Context API para gerenciamento de estado global
+### Interface Principal
+- Título "Busque o refrigerante"
+- Barra de pesquisa responsiva
+- Grid de produtos com imagens
 
-### APIs Utilizadas
-- Autocomplete: `http://tdzain.vtexcommercestable.com.br/buscaautocomplete/?productNameContains={{termo}}`
-- Busca Full Text: `http://tdzain.vtexcommercestable.com.br/api/catalog_system/pub/products/search/{{termo}}?map=ft`
+### Produtos Disponíveis
+- Coca-Cola 2L
+- Pepsi 2L
+- Guaraná Antarctica 2L
+- Fanta Laranja 2L
+- Sprite 2L
+
+### Página do Produto
+- Imagem do produto
+- Nome e marca
+- Preço atual e anterior
+- Opções de parcelamento
+- Calculadora de frete
+- Seletor de quantidade
+- Botão de compra
 
 ## 🎨 Interface e UX
 
-Priorizei elementos que impactam diretamente na taxa de conversão:
-- Preço em destaque
-- Imagens de qualidade
-- Informações de frete
-- Avaliações dos produtos
-- Disponibilidade em estoque
+- Design limpo e minimalista
+- Cores em tons de azul para elementos interativos
+- Imagens reais dos produtos
+- Layout responsivo
+- Feedback visual nas interações
+
+## 📱 Responsividade
+
+O projeto é totalmente responsivo, adaptando-se a diferentes tamanhos de tela:
+- Desktop: Grid com múltiplas colunas
+- Tablet: Grid adaptativo
+- Mobile: Duas colunas de produtos
 
 ## 🚧 Desafios Enfrentados
 
@@ -86,7 +104,7 @@ Priorizei elementos que impactam diretamente na taxa de conversão:
 
 ## 🌟 Considerações Finais
 
-O desenvolvimento deste projeto foi uma experiência enriquecedora que permitiu aplicar conhecimentos em React, TypeScript e boas práticas de desenvolvimento. O foco principal foi criar uma interface intuitiva e eficiente, similar à do Submarino, mantendo o código organizado e escalável.
+O desenvolvimento deste projeto foi uma experiência enriquecedora que permitiu aplicar conhecimentos em React, TypeScript e boas práticas de desenvolvimento. O foco principal foi criar uma interface intuitiva e eficiente, mantendo o código organizado e escalável.
 
 ## 📚 Documentação Adicional
 
